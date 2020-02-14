@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+.nav {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #181818;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav li a:hover {
+    color: #DE0023;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+main .home__img {
+    width: 100%;
+    height: 85vh;
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.collection h2{
+    color: #181818;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.collection__all__shoes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.collection__shoes {
+    position: relative;
+}
+
+.collection__shoes i{
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    top: 20px;
+    color: #181818;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.collection__shoes i:hover{
+    color: #DE0023;
+}
+
+.collection__shoes img {
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.collection__shoes p{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #181818;
+}
+
+.collection__shoes span{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: #181818;
+}
+
+.collection a{
+    background-color: #282A5C;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 20px 20px;
+    margin-bottom: 150px;
+    transition:  0.3s;
+    border: 2px solid #282A5C;
+}
+
+.collection a:hover{
+    background-color: white;
+    color: #282A5C;
+}
+
+.inscription {
+    width: 100%;
+    background-color: #F8F1F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inscription h2 {
+    color: #181818;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.inscription a {
+    background-color: #D8D8D8;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #282A5C;
+    padding: 20px 60px;
+    margin-bottom: 150px;
+    transition:  0.3s;
+    border: 2px solid #282A5C;
+}
+
+.inscription a:hover {
+    background-color: #282A5C;
+    color: #D8D8D8;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #282A5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
